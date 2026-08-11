@@ -4,15 +4,17 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-
-Pandas
-Numpy
-Matplotlib
-JupyterLab
+![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white)
+![JupyterLab](https://img.shields.io/badge/JupyterLab-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
 </div>
 
 ## 📖 Project Overview
+
+This project is a retail banking transaction analytics with 20,000 synthetic transactions across products like checking/saving accounts, loans, mortgages, and credit cards, spanning Jan 2023 - May 2026, across 8 Spanish cities and 4 channels (Mobile, Branch, ATM, Online).
+
 The objective is to uncover customer behaviour, transaction patterns, revenue drivers, and operational insights that banks can use to make better business decisions.
 
 The analysis aims to help the bank:
@@ -22,7 +24,7 @@ The analysis aims to help the bank:
 - Optimize branch and transactional channel performance.
 - Increase customer engagement and retention.
 
-## Analytical themes:
+## Project Questions:
 **1. Customer insights & Segmentation**
 - Which customer segment (e.g., High Income vs. Low Income) performs the most transactions?
 - Which financial products are most popular within each customer segment?
@@ -50,10 +52,36 @@ The dataset contains 20,000 transaction records with 19 columns (Data dictionary
 | ------------- | ------------- |
 | TransactionID  | 20,000  |
 | CustomerID  | 8,025  |
-| TransactionType  | 6  |
-| ProductCategory  | 5  |
-| ProductSubcategory  | 5  |
-| Currency  | 2 (USD, EUR)  |
+| Time Span  | 01-01-2023 to 20-05-2025  |
+| Total Amount USD | $109,578,807  |
+| Total Fee Revenue USD | $691,286  |
+| Total Credit Card Fees USD | $113,266  |
+| Total Insurance Fees USD | $216,512  |
+| Total Late Payment Amount USD | $361,509 |
+| Transactions with any fee | 10,106 (50.5%)  |
+| Reporting Currency | USD (post-cleaning) |
+
+### Column Types
+| Type  | Columns |
+| ------------- | ------------- |
+| Identifiers  | 	TransactionID, CustomerID  |
+| Datetime  | 	TransactionDate  |
+| Categorical  | 		TransactionType, ProductCategory, ProductSubcategory, BranchCity, Channel, Currency, CustomerSegment, RecommendedOffer  |
+| Numeric  | 		Amount, CreditCardFees, InsuranceFees, LatePaymentAmount, CustomerScore, MonthlyIncome, BranchLat, BranchLong  |
+
+### Categorical breakdown
+| Field | Number of Categories | Values |
+|---|---:|---|
+| TransactionType | 6 | Card Payment, Deposit, Fee, Loan Payment, Transfer, Withdrawal |
+| ProductCategory | 5 | Checking Account, Credit Card, Loan, Mortgage, Savings Account |
+| ProductSubcategory | 5 | Business, Gold, Platinum, Standard, Student |
+| BranchCity | 8 | Madrid, Barcelona, Valencia, Seville, Zaragoza, Malaga, Murcia, Bilbao |
+| Channel | 4 | ATM, Branch, Mobile, Online |
+| CustomerSegment | 3 | High / Middle / Low Income Segment |
+| RecommendedOffer | 7 | Exclusive Platinum Package, Premium Investment Services, Mid-tier Savings Booster, Gold Card w/ Travel Benefits, Financial Literacy Program Access, Personal Loan Cashback Offer, No-Fee Basic Account |
+
+
+
 
 
 # Steps
