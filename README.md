@@ -81,9 +81,6 @@ The dataset contains 20,000 transaction records with 19 columns (Data dictionary
 | RecommendedOffer | 7 | Exclusive Platinum Package, Premium Investment Services, Mid-tier Savings Booster, Gold Card w/ Travel Benefits, Financial Literacy Program Access, Personal Loan Cashback Offer, No-Fee Basic Account |
 
 
-
-
-
 # Steps
 1. Assess data quality (Appendix 2 and 3)
 2. Convert all EUR transactions to USD using [Google Finance](https://www.google.com/finance/beta/quote/EUR-USD) fixed exchange rate (Jul 2026) of 1 EUR = 1.10 USD (Appendix 4)
@@ -94,6 +91,7 @@ The dataset contains 20,000 transaction records with 19 columns (Data dictionary
 Link
 
 # Key Findings
+
 
 # Limitations
 
